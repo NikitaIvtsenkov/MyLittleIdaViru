@@ -1,0 +1,542 @@
+/* App.css */
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Base Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p, li, a, button, input, label {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.small-text {
+  font-size: 0.875rem;
+}
+
+/* App Specific Styles */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  max-width: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+
+/* Layout Styles */
+.main-container {
+  flex: 1;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: calc(100vh - 120px);
+  overflow: hidden;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Header/Footer Base */
+header, footer {
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+/* Popup Styles */
+.popup-container {
+  max-height: 400px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.popup-container h3 {
+  margin-top: 0;
+}
+
+.popup-container button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  max-width: 100%;
+}
+
+.popup-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Checkbox Styles */
+.categories-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.category-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+}
+
+.category-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  max-width: 100%;
+}
+
+.category-checkbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Component-specific base styles */
+.banner-box, .carousel-container, .map-container {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+/* Utility Classes */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.gap-sm {
+  gap: 15px;
+}
+
+.gap-md {
+  gap: 30px;
+}
+
+.gap-lg {
+  gap: 45px;
+}
+
+/* Padding Utilities */
+.p-1 {
+  padding: 10px;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+/* Margin Utilities */
+.mt-1 {
+  margin-top: 10px;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+/* Text Alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Breakpoints with Text Adaptation */
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .main-container {
+    padding: 15px;
+  }
+  
+  .content-wrapper {
+    gap: 20px;
+    padding: 15px 0;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.4rem; }
+  p, li, a, button { font-size: 0.95rem; }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .main-container {
+    padding: 10px;
+  }
+  
+  .content-wrapper {
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.3rem; }
+  p, li, a, button { font-size: 0.9rem; }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .main-container {
+    padding: 30px;
+  }
+
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .main-container {
+    padding: 0 30px;
+  }
+
+  h1 { font-size: 2.4rem; }
+  h2 { font-size: 2.2rem; }
+  h3 { font-size: 2rem; }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .main-container {
+    padding: 50px;
+  }
+
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 2.2rem; }
+}
+
+/* For very large screens (4K and above) */
+@media (min-width: 2500px) {
+  html {
+    font-size: 20px;
+  }
+  
+  .main-container {
+    max-width: 2400px;
+    padding: 0 300px;
+  }
+
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.8rem; }
+  h3 { font-size: 2.6rem; }
+  p, li, a, button { font-size: 1.2rem; }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: none;
+    color: #000;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  header, footer, .no-print {
+    display: none;
+  }
+  
+  .main-container {
+    padding: 0;
+  }
+  
+  .page-container {
+    min-height: auto;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.6rem; }
+  p, li, a { font-size: 1rem; }
+}
+
+/* Debug class for layout issues */
+.debug-outline * {
+  outline: 1px solid red;
+}
+
+/* BannerBox.css */
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  width: 100%;
+}
+
+.language-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.language-button {
+  background-color: rgba(0,0,0,0);
+  border: 1.5px solid rgba(255,255,255);
+  color: #FFFFFF;
+  padding: 0.4rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Manrope', sans-serif;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+
+.language-button:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.language-button.active {
+  background-color: #FFF;
+  color: #144F7B;
+}
+
+.banner-title {
+  font-weight: 800;
+  font-family: 'Manrope', sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.banner-description {
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  color: #FFF;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Адаптивные стили */
+@media (min-width: 576px) {
+  .banner-container {
+    min-height: 400px;
+  }
+  
+  .banner-content {
+    padding: 2.5rem;
+  }
+  
+  .banner-title {
+    font-size: 2rem;
+  }
+  
+  .banner-description {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-container {
+    min-height: 500px;
+  }
+  
+  .banner-title {
+    font-size: 2.5rem;
+  }
+  
+  .banner-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-container {
+    min-height: 600px;
+  }
+  
+  .banner-content {
+    padding: 0 2rem 1rem;
+  }
+  
+  .banner-title {
+    font-size: 3rem;
+    width: 56%;
+    line-height: 108%;
+  }
+  
+  .banner-description {
+    font-size: 1.2rem;
+    width: 52%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-container {
+    min-height: 660px;
+  }
+  
+  .banner-title {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .banner-title {
+    font-size: 3.5rem;
+    max-width: 800px;
+  }
+  
+  .banner-description {
+    font-size: 1.3rem;
+    max-width: 700px;
+  }
+}

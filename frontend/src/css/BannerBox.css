@@ -1,0 +1,127 @@
+.banner-container {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  border-radius: 0; /* Remove border-radius for full-screen */
+  margin-top: 0; /* Remove margin for full-screen */
+  overflow: hidden;
+  padding: 1rem 2rem 2rem;
+  display: flex; /* Ensure container supports flex for content */
+}
+
+.banner-content {
+  width: 100%;
+  height: 100%; /* Take full height of parent minus padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute content: top and bottom */
+}
+
+.language-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.language-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid rgba(255, 255, 255);
+  color: #FFFFFF;
+  padding: 0.4rem 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Manrope', sans-serif;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+
+.language-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+.language-button.active {
+  background-color: #FFF;
+  color: #136C32;
+  font-weight: 600;
+}
+
+.banner-title {
+  font-weight: 800;
+  font-family: 'Manrope', sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.banner-description {
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  color: #FFF;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Адаптивные стили */
+@media (min-width: 576px) {
+  .banner-content {
+    padding: 2.5rem;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-content {
+    padding: 0rem 1.5rem;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+    width: 56%;
+    line-height: 108%;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-title {
+    font-size: 3.25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .banner-title {
+    font-size: 2.8rem;
+    max-width: 700px;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+    max-width: 700px;
+  }
+}
