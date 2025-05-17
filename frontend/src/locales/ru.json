@@ -90,6 +90,8 @@
     "PlacesMap_noEventsInResponse": "События в ответе не найдены",
     "PlacesMap_eventsLoadError": "Ошибка загрузки событий",
     "PlacesMap_unknownError": "Неизвестная ошибка",
+    "PlacesMap_LocationLabel": "Местоположение: ",
+    "PlacesMap_WorkingHoursLabel": "Рабочее время: ",
     "cityModal": {
         "title": "Добавить новый город",
         "nameLabel": "Название*",

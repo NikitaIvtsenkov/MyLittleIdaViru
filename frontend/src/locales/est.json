@@ -90,6 +90,8 @@
     "PlacesMap_noEventsInResponse": "Vastuses sündmusi ei leitud",
     "PlacesMap_eventsLoadError": "Viga sündmuste laadimisel",
     "PlacesMap_unknownError": "Tundmatu viga",
+    "PlacesMap_LocationLabel": "Asukoht: ",
+    "PlacesMap_WorkingHoursLabel": "Tööaeg: ",
     "cityModal": {
         "title": "Lisa uus linn",
         "nameLabel": "Nimi*",

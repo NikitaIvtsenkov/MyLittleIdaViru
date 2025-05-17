@@ -90,6 +90,8 @@
   "PlacesMap_noEventsInResponse": "No events found in response",
   "PlacesMap_eventsLoadError": "Error loading events",
   "PlacesMap_unknownError": "Unknown error",
+  "PlacesMap_LocationLabel": "Location: ",
+  "PlacesMap_WorkingHoursLabel": "Working hours: ",
   "cityModal": {
     "title": "Add New City",
     "nameLabel": "Name*",

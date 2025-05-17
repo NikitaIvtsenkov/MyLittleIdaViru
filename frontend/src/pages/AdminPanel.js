@@ -1,4 +1,3 @@
-// export default AdminPlacesPanel;
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Table, Button, Modal, Form, InputGroup, Spinner, Alert, Dropdown, Tabs, Tab, Row, Col } from 'react-bootstrap';
